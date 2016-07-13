@@ -9,8 +9,6 @@ public class Isomorphic
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		String s1,s2;
-		// your code goes here
-		
 		Scanner s=new Scanner(System.in);
 		s1=s.nextLine();
 		System.out.println("Enter the String2");
