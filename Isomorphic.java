@@ -26,7 +26,7 @@ public class Isomorphic
 	}
 	public boolean isomorphic(String s1,String s2)
 		{
-			if(s1==NULL | s2==NULL)
+			if(s1==NULL || s2==NULL)
 			{
 				return false;
 			}
