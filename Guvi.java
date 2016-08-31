@@ -2,37 +2,31 @@ package test;
 public class Guvi {
 	public static void main(String[] args)
 	{
-		String o = "hi today is very bad day";
-
-		char[] c = o.toCharArray();
-		for(int i=0;i<o.length();i++)
+		String givenString= "hi today is very bad day";
+		char[] a = givenString.toCharArray();
+		for(int i=0;i<givenString.length();i++)
 		{
-		if(o.charAt(i)=='e')
+		if(givenString.charAt(i)=='e')
 		{
-			c[i]='a';
+			a[i]='a';
 		}
-		if(o.charAt(i)=='a')
+		if(givenString.charAt(i)=='a')
 		{
-			c[i]='e';
+			a[i]='e';
 		}
 		}
-		    String swappedString = new String(c);
-	    	
-	    	String source = swappedString;
-	        StringBuffer res = new StringBuffer();
-
+		String newString = new String(a);
+	    	String source = newString;
+	        StringBuffer result = new StringBuffer();
 	        String[] strArr = source.split(" ");
 	        for (String str : strArr) {
 	            char[] stringArray = str.trim().toCharArray();
 	            stringArray[0] = Character.toUpperCase(stringArray[0]);
 	            str = new String(stringArray);
 
-	            res.append(str).append(" ");
+	            result.append(str).append(" ");
 	        }
-
-	        System.out.print(res.toString().trim());
-
-		
+	        System.out.print(result.toString().trim());
   }
 
 }
